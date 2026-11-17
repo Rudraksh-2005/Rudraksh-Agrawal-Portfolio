@@ -50,6 +50,8 @@
 
   run.addEventListener('pointerdown',press);
   window.addEventListener('pointerup',release);
+  window.addEventListener('pointercancel',release);
+  run.addEventListener('contextmenu',function(e){e.preventDefault();});
   window.addEventListener('keydown',function(e){if(e.code==='Space'&&!e.repeat)press(e);});
   window.addEventListener('keyup',function(e){if(e.code==='Space')release();});
   skip.addEventListener('click',function(){msg.textContent='VIP entrance used. Welcome in.';unlock(false);});
