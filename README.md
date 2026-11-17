@@ -1,4 +1,4 @@
-# Player 208 — Rudraksh Agrawal | Developer Portfolio
+# Rudraksh Agrawal Portfolio (Player 208)
 
 An interactive, Squid Game-themed developer portfolio featuring a Red Light / Green Light mini-game to unlock the dormitory, dynamic Three.js 3D animations, real-time Socket.IO live player stats, an SQLite leaderboard, and verified projects.
 
@@ -27,8 +27,8 @@ An interactive, Squid Game-themed developer portfolio featuring a Red Light / Gr
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/Rudraksh-2005/squid-portfolio.git
-cd squid-portfolio
+git clone https://github.com/Rudraksh-2005/rudraksh-agrawal-portfolio.git
+cd rudraksh-agrawal-portfolio
 npm install
 ```
 
@@ -55,7 +55,7 @@ npm run dev
 Because this application uses a Node.js server with **Socket.IO** (WebSockets) and **SQLite** for real-time stats and messages, deploying to a Node Web Service is recommended:
 
 ### Option A: Render (Free Web Service)
-1. Push this repository to your GitHub account (`https://github.com/Rudraksh-2005/squid-portfolio`).
+1. Push this repository to your GitHub account (`https://github.com/Rudraksh-2005/rudraksh-agrawal-portfolio`).
 2. Log into [Render.com](https://render.com) and click **New + > Web Service**.
 3. Connect your GitHub repository.
 4. Settings:
@@ -66,7 +66,7 @@ Because this application uses a Node.js server with **Socket.IO** (WebSockets) a
 
 ### Option B: Railway
 1. Go to [Railway.app](https://railway.app) and create a **New Project > Deploy from GitHub repo**.
-2. Select `squid-portfolio`.
+2. Select `rudraksh-agrawal-portfolio`.
 3. Railway automatically detects Node.js and starts `npm start`.
 4. Go to **Settings > Generate Domain** to get your public URL.
 

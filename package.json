@@ -1,7 +1,7 @@
 {
-  "name": "squid-portfolio",
+  "name": "rudraksh-agrawal-portfolio",
   "version": "1.0.0",
-  "description": "Squid Game inspired developer portfolio with a Node.js backend",
+  "description": "Rudraksh Agrawal Portfolio - Squid Game inspired developer portfolio (Player 208)",
   "main": "server.js",
   "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
   "engines": { "node": ">=18" },
