@@ -27,8 +27,8 @@ An interactive, Squid Game-themed developer portfolio featuring a Red Light / Gr
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/Rudraksh-2005/rudraksh-agrawal-portfolio.git
-cd rudraksh-agrawal-portfolio
+git clone https://github.com/Rudraksh-2005/Rudraksh-Agrawal-Portfolio.git
+cd Rudraksh-Agrawal-Portfolio
 npm install
 ```
 
