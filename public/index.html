@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Player 208 – Rudraksh Agrawal | Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="clear" role="status"><div><h2>STAGE CLEAR</h2><p>You’re in. Welcome to the next round.</p></div></div>
+
+<header class="hero" id="hero">
+  <div class="shapes" aria-hidden="true"><canvas id="gl"></canvas></div>
+  <div class="wrap">
+    <div class="heroGrid">
+      <div>
+        <span class="badge">Player <b>208</b></span> <span class="live" id="live">● connecting…</span>
+        <h1>Hi, I’m <em>Rudraksh.</em> I build things that survive.</h1>
+        <p class="lead">“Every player has a story. Every challenge has a solution. This is mine.”<br><span style="color:#d4e0db;font-size:16px;">Computer Science at UPES, Dehradun · Beat the doll to unlock my work, or take the VIP entrance.</span></p>
+        <div class="arena" role="group" aria-label="Red Light Green Light mini-game">
+          <div class="hud"><span class="l"><span class="lamp"></span><span id="state">Green light: run!</span></span><span class="r" id="stats">Time 0.0s · Eliminations 0</span></div>
+          <div class="track"><div class="fill" id="fill"></div><div class="runner" id="runner"></div></div>
+          <div class="btns"><button class="run" id="run">HOLD TO RUN</button><button class="skip" id="skip">Take the VIP entrance</button></div>
+          <p id="msg" aria-live="polite">Hold the button (or Space) on green. Let go the second it turns red.</p>
+        </div>
+      </div>
+      <div class="dollWrap" aria-hidden="true">
+        <svg class="doll" viewBox="0 0 200 270">
+          <polygon points="100,120 28,262 172,262" fill="#f08a24"/>
+          <rect x="62" y="104" width="76" height="30" rx="8" fill="#f4eee2"/>
+          <circle cx="100" cy="70" r="52" fill="#e9c9a6"/>
+          <g class="back"><path d="M48 70a52 52 0 0 1 104 0c0 40-20 54-52 54S48 110 48 70z" fill="#1a1210"/><path d="M52 40q48 30 96 0" stroke="#33231c" stroke-width="5" fill="none"/></g>
+          <g class="face">
+            <path d="M48 62a52 52 0 0 1 104 0q-52-16-104 0z" fill="#1a1210"/>
+            <circle cx="78" cy="78" r="7" fill="#111"/><circle cx="122" cy="78" r="7" fill="#111"/>
+            <g class="scan"><circle cx="78" cy="78" r="12" fill="none" stroke="#ff3b3b" stroke-width="3"/><circle cx="122" cy="78" r="12" fill="none" stroke="#ff3b3b" stroke-width="3"/></g>
+            <circle cx="62" cy="96" r="8" fill="#ff7a7a" opacity=".7"/><circle cx="138" cy="96" r="8" fill="#ff7a7a" opacity=".7"/>
+            <path d="M88 102q12 8 24 0" stroke="#7a1a1a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <div class="dollCap" id="cap">Turned away…</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><div id="tk"></div></div>
+
+<main id="content">
+  <section id="pool">
+    <div class="wrap">
+      <h2>The prize pool</h2>
+      <p class="sub">Key milestones and stats collected across rounds of building and problem solving.</p>
+      <div class="pool">
+        <div><b>500+</b><span>LeetCode DSA solved (Top 92%)</span></div>
+        <div><b>8.37</b><span>CGPA · B.Tech CSE (UPES)</span></div>
+        <div><b>Top 10%</b><span>Scholarship recipient (Y1, Y2 & Y3)</span></div>
+        <div><b>8 Weeks</b><span>AlignAV Intern · <a href="/assets/alignav-internship-certificate.pdf" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">Certificate ↗</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rounds">
+    <div class="wrap">
+      <h2>Rounds I’ve cleared</h2>
+      <p class="sub">Every project is a round: the challenge, the weapons I picked, and what made it out alive.</p>
+      <div class="grid">
+        <article class="round">
+          <span class="mark">○</span>
+          <span class="no">Round 1</span>
+          <h3>DocuVerse AI</h3>
+          <p>AI-powered RAG document platform for semantic search, interactive chat, summarization, and PDF comparison using Groq Llama-3.1-8B and ChromaDB.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>Groq LLM</span><span>ChromaDB</span></div>
+          <span class="verdict">Survived: deployed</span>
+          <div class="proj-links">
+            <a href="https://docuverse-ai-rag-frontend-theta.vercel.app/" target="_blank" rel="noopener" class="highlight-link">Live Demo ↗</a>
+            <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+        <article class="round">
+          <span class="mark">△</span>
+          <span class="no">Round 2</span>
+          <h3>Chatify</h3>
+          <p>Full-stack real-time chat application featuring JWT authentication, HTTP-only cookies, MongoDB Atlas, Cloudinary media storage, and instant Socket.IO messaging.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>Tailwind</span></div>
+          <span class="verdict">Survived: live</span>
+          <div class="proj-links">
+            <a href="https://chatify-7n2s.vercel.app/" target="_blank" rel="noopener" class="highlight-link">Live Demo ↗</a>
+            <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+        <article class="round">
+          <span class="mark">□</span>
+          <span class="no">Round 3</span>
+          <h3>Screen Time Prediction</h3>
+          <p>Machine learning-powered productivity prediction system analyzing user screen-time behavior via an XGBoost classifier with an interactive Streamlit dashboard.</p>
+          <div class="tags"><span>Python</span><span>XGBoost</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span></div>
+          <span class="verdict">Survived: trained & deployed</span>
+          <div class="proj-links">
+            <a href="https://screen-time-analysis-for-analyzing-predictivity.streamlit.app/" target="_blank" rel="noopener" class="highlight-link">Live Demo ↗</a>
+            <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+        <article class="round">
+          <span class="mark">✕</span>
+          <span class="no">Round 4 · Internship</span>
+          <h3>AlignAV Pty Ltd</h3>
+          <p>Engineered RESTful APIs for IoT device telemetry and management, performed backend testing, and collaborated across frontend to deliver scalable features (1 June 2026 – 31 July 2026).</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>IoT Telemetry</span><span>Backend Testing</span></div>
+          <span class="verdict">Survived: 8 weeks cleared</span>
+          <div class="cert-preview">
+            <a href="/assets/alignav-internship-certificate.pdf" target="_blank" rel="noopener" class="cert-thumb-link" title="Open full certificate PDF">
+              <img src="/assets/alignav-certificate.jpg" alt="AlignAV Certificate of Completion - Rudraksh Agrawal" class="cert-thumb">
+              <span class="cert-badge">Official Certificate 📜</span>
+            </a>
+          </div>
+          <div class="proj-links">
+            <a href="/assets/alignav-internship-certificate.pdf" target="_blank" rel="noopener" class="highlight-link">View Certificate ↗</a>
+            <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="dorm">
+    <div class="wrap dorm">
+      <div class="suit">
+        <span class="num">208</span>
+        <strong>Rudraksh Agrawal</strong>
+        <small>B.Tech CSE · UPES Dehradun</small>
+        <div class="social-links" style="justify-content:center;margin-top:16px;">
+          <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener" style="background:#111;border-color:#333;">GitHub ↗</a>
+          <a href="mailto:rudrakshagrawal58@gmail.com" style="background:#111;border-color:#333;">Email ✉</a>
+        </div>
+      </div>
+      <div>
+        <h2>Inside the dormitory</h2>
+        <p class="sub">Every journey begins with curiosity, and mine led me to the world of code. From developing applications to exploring artificial intelligence, I find purpose in solving problems and bringing ideas to life. Currently studying Computer Science at UPES, I'm building my way towards creating technology that makes a difference.</p>
+        <div class="stam">
+          <div>C++ & DSA<span class="bar"><i style="width:92%"></i></span></div>
+          <div>Python & AI/ML<span class="bar"><i style="width:88%"></i></span></div>
+          <div>Node.js & APIs<span class="bar"><i style="width:85%"></i></span></div>
+          <div>JavaScript & React<span class="bar"><i style="width:82%"></i></span></div>
+          <div>Databases (SQL/Mongo)<span class="bar"><i style="width:78%"></i></span></div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Rudraksh-2005" target="_blank" rel="noopener">GitHub: @Rudraksh-2005 ↗</a>
+          <a href="/assets/alignav-internship-certificate.pdf" target="_blank" rel="noopener">Internship Certificate 📜</a>
+          <a href="mailto:rudrakshagrawal58@gmail.com">rudrakshagrawal58@gmail.com ✉</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="board">
+    <div class="wrap">
+      <h2>Hall of survivors</h2>
+      <p class="sub">Fastest clears of the doll’s game. <span id="elims"></span></p>
+      <ol class="board" id="boardList"></ol>
+      <form id="scoreForm" class="form" hidden>
+        <p id="yourTime"></p>
+        <input id="scoreName" maxlength="20" placeholder="Your player name" required aria-label="Player name">
+        <button class="run" type="submit">SUBMIT MY TIME</button>
+        <p id="scoreMsg" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="final" id="contact">
+    <div class="wrap">
+      <h2>You’ve been selected</h2>
+      <div class="card">
+        <div class="sym"><span class="c"></span><span class="t"></span><span></span></div>
+        <p>Join Rudraksh’s next project?</p>
+        <small>Player 208 · Invitation valid for one reply</small>
+      </div>
+      <form id="contactForm" class="form light">
+        <input name="name" maxlength="60" placeholder="Your name" required aria-label="Your name">
+        <input name="email" type="email" maxlength="120" placeholder="Your email" required aria-label="Your email">
+        <textarea name="message" maxlength="1500" rows="4" placeholder="Tell me about your project or opportunity" required aria-label="Message"></textarea>
+        <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="cta" type="submit">Accept the invitation</button>
+        <p id="contactMsg" aria-live="polite"></p>
+      </form>
+      <div class="contact-meta">
+        <span>Email: <a href="mailto:rudrakshagrawal58@gmail.com">rudrakshagrawal58@gmail.com</a></span>
+        <span>Phone: +91 9368639565</span>
+        <span>Location: Dehradun, India</span>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>Player 208 · Rudraksh Agrawal · UPES Dehradun · All Rights Reserved</footer>
+
+<script src="/vendor/three/three.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/scene.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/api.js"></script>
+</body>
+</html>
